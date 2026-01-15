@@ -6,21 +6,12 @@
 /*   By: marekald <marekald@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 19:44:51 by marekald          #+#    #+#             */
-/*   Updated: 2025/11/30 15:56:36 by marekald         ###   ########.fr       */
+/*   Updated: 2026/01/15 20:47:05 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/ft_printf.h"
-
-int	ft_strlen(char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
+#include "../include/push_swap.h"
 
 int	ft_putnbr_base(char *base, long n)
 {
