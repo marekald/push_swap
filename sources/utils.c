@@ -1,16 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/15 15:41:16 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/10 16:53:04 by marekald         ###   ########.fr       */
+/*   Created: 2026/01/17 15:33:02 by marekald          #+#    #+#             */
+/*   Updated: 2026/01/17 15:58:15 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/push_swap.h"
+
+size_t	ft_strlen(const char *str)
+{
+	size_t	i;
+
+	i = 0;
+	while (*str != '\0')
+	{
+		i++;
+		str++;
+	}
+	return (i);
+}
+
+int	ft_isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
+}
 
 int	ft_atoi(const char *c)
 {
@@ -38,9 +59,3 @@ int	ft_atoi(const char *c)
 	}
 	return (num * neg);
 }
-
-/* int	main (void)
-{
-	printf("%i\n", ft_atoi("\t\n\r\v\f  469 \n"));
-	printf("%i\n", atoi("\t\n\r\v\f  469 \n"));
-} */

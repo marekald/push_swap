@@ -6,11 +6,29 @@
 /*   By: marekald <marekald@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 19:44:42 by marekald          #+#    #+#             */
-/*   Updated: 2025/11/30 16:56:20 by marekald         ###   ########.fr       */
+/*   Updated: 2026/01/17 15:55:00 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ft_printf.h"
+#include "../include/push_swap.h"
+
+int	ft_putnbr_base(char *base, long n)
+{
+	int	len;
+	int	i;
+
+	i = 0;
+	len = ft_strlen(base);
+	if (n < 0)
+	{
+		i += write(1, "-", 1);
+		n = n * -1;
+	}
+	if (n > (len - 1))
+		i += ft_putnbr_base(base, n / len);
+	i += write (1, &base[n % len], 1);
+	return (i);
+}
 
 int	ft_putchar(char c)
 {
