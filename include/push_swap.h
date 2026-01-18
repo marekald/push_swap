@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 15:56:05 by marekald          #+#    #+#             */
-/*   Updated: 2026/01/17 15:58:48 by marekald         ###   ########.fr       */
+/*   Updated: 2026/01/17 20:43:08 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,19 @@
 # include <stdlib.h>
 # include <stdint.h>
 
+typedef struct s_stack
+{
+	int				content;
+	int				index;
+	struct s_stack	*next;
+}	t_stack;
+
+void	ft_error(void);
 int		ft_printf(char const *format, ...);
 int		ft_isdigit(int c);
 int		ft_atoi(const char *c);
 void	ft_error(void);
 size_t	ft_strlen(const char *str);
+int		ft_check_args(char **argv);
 
 #endif

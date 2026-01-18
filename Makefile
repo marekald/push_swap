@@ -1,7 +1,7 @@
 NAME = push_swap
 
 SRCS_DIR = sources/
-SRCS = push_swap.c ft_printf.c ft_putnbr_base.c
+SRCS = push_swap.c ft_printf.c utils.c
 
 OBJECTS = $(addprefix $(SRCS_DIR), $(SRCS:.c=.o))
 DOTC = $(addprefix $(SRCS_DIR), $(SRCS))

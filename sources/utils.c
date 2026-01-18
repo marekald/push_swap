@@ -6,11 +6,17 @@
 /*   By: marekald <marekald@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 15:33:02 by marekald          #+#    #+#             */
-/*   Updated: 2026/01/17 15:58:15 by marekald         ###   ########.fr       */
+/*   Updated: 2026/01/17 20:42:54 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
+
+void	ft_error(void)
+{
+	ft_printf("Error\n");
+	exit (0);
+}
 
 size_t	ft_strlen(const char *str)
 {
