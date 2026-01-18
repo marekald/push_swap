@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 15:33:02 by marekald          #+#    #+#             */
-/*   Updated: 2026/01/17 20:42:54 by marekald         ###   ########.fr       */
+/*   Updated: 2026/01/18 11:58:51 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,6 @@ size_t	ft_strlen(const char *str)
 		str++;
 	}
 	return (i);
-}
-
-int	ft_isdigit(int c)
-{
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
 }
 
 int	ft_atoi(const char *c)

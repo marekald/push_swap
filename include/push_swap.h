@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 15:56:05 by marekald          #+#    #+#             */
-/*   Updated: 2026/01/17 20:43:08 by marekald         ###   ########.fr       */
+/*   Updated: 2026/01/18 11:59:03 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ typedef struct s_stack
 
 void	ft_error(void);
 int		ft_printf(char const *format, ...);
-int		ft_isdigit(int c);
 int		ft_atoi(const char *c);
 void	ft_error(void);
 size_t	ft_strlen(const char *str);
